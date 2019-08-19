@@ -91,6 +91,51 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Center(child: Text("Hello World")),
+            Icon(Icons.star, color: Colors.red[500]),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Icon(Icons.star,color: Colors.red[200],),
+              Icon(Icons.star,color:Colors.blue[200],),
+              Icon(Icons.star,color:Colors.yellow[200],),
+              Icon(Icons.star,color:Colors.pink[200],),
+              Icon(Icons.star,color: Colors.green[200],),
+
+            ],
+
+          ),
+
+
+//            Row(
+//              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//              children: <Widget>[
+//                Expanded(
+//                  child: Image.asset('icons/icon_marka.png'),
+//                ),
+//                Expanded(
+//                  flex: 3,
+//                  child: Image.asset('icons/icon_markb.png'),
+//                ),
+//                Expanded(child: Image.asset('icons/icon_markc.png')),
+//              ],
+//            ),
+//
+//            Column(
+//              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//              children: <Widget>[
+//                Image.asset('icons/icon_marka.png'),
+//                Image.asset('icons/icon_markb.png'),
+//                Image.asset('icons/icon_markc.png'),
+//              ],
+//            ),
+//
+//            Image.asset('icons/icon_marka.png'),
+//            Image.asset('icons/icon_markb.png'),
+//            Image.asset('icons/icon_markc.png'),
+
+//            Image.network(
+//                'https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=904702694,2216294275&fm=85&s=D30041A27C770F9A258E0D530300108A'),
             Text(
               'You have pushed the button this many times:',
             ),
