@@ -92,19 +92,21 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Center(child: Text("Hello World")),
-            Icon(Icons.star, color: Colors.red[500]),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Icon(Icons.star,color: Colors.red[200],),
-              Icon(Icons.star,color:Colors.blue[200],),
-              Icon(Icons.star,color:Colors.yellow[200],),
-              Icon(Icons.star,color:Colors.pink[200],),
-              Icon(Icons.star,color: Colors.green[200],),
+      rating,
+//            Icon(Icons.star, color: Colors.red[500]),
+//          Row(
+//            mainAxisSize: MainAxisSize.min,
+//            children: <Widget>[
+//              Icon(Icons.star,color: Colors.red[200],),
+//              Icon(Icons.star,color:Colors.blue[200],),
+//              Icon(Icons.star,color:Colors.yellow[200],),
+//              Icon(Icons.star,color:Colors.pink[200],),
+//              Icon(Icons.star,color: Colors.green[200],),
+//
+//            ],
+//
+//          ),
 
-            ],
-
-          ),
 
 
 //            Row(
@@ -151,6 +153,50 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+
+
     );
+
+
   }
+  static var stars = Row(
+    mainAxisSize: MainAxisSize.min,
+    children:[
+      Icon(Icons.star,color: Colors.red[500],),
+      Icon(Icons.star,color:Colors.red[600]),
+      Icon(Icons.star,color:Colors.red[500]),
+      Icon(Icons.star,color:Colors.red[600]),
+      Icon(Icons.star,color:Colors.red[300])
+
+
+    ],
+  );
+
+  final rating = Container(
+      padding: EdgeInsets.all(20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children:[
+           stars,
+          Text(
+            '170views',
+            style: TextStyle(
+              color: Colors.green,
+              fontWeight: FontWeight.w800,
+              fontFamily: 'Roboto',
+              letterSpacing: 0.5,
+              fontSize: 20,
+            ),
+
+          )
+
+
+        ],
+
+      )
+
+  );
+
+
+
 }
